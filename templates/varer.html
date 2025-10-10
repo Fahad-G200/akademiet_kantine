@@ -1,19 +1,16 @@
 {% extends "base.html" %}
-# !-- Jeg lar denne siden arve navihasjon og footer fra base.html -- >
+<!-- Jeg lar denne siden arve navigasjon og footer fra base.html -->
 
-{% block title %}Faste varer {% endblock %}
-# !-- Tittelen i fanen endres til "Faste varer" -- >
+{% block title %}Faste varer{% endblock %}
+<!-- Tittelen i fanen endres til "Faste varer" -->
 
 {% block content %}
-<h1>Faste varer</h1>
+  <h1>Faste varer</h1>
 
-# !-- Jeg bruker en Jinja-løkke for å vise alle varer fra Python-lista varer -- >
-<ul>
-    {% for vare in varer %}
-    <li>{{ v }}</li>
+  <!-- Jeg bruker en Jinja-løkke for å vise alle varer fra Python-lista VARER -->
+  <ul>
+    {% for v in varer %}
+      <li>{{ v }}</li>
     {% endfor %}
-</ul>
-</ulv>
+  </ul>
 {% endblock %}
-
-
