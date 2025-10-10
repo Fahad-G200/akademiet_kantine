@@ -34,7 +34,7 @@ def meny():
         "meny.html",       # bruker templates/meny.html
         ukens_meny=UKENS_MENY   # sender Python-lista til Jinja
     )
-# Blokk 4: /varer bruker felles listen
+# Rute: /varer bruker felles listen
 @app.route("/varer")
 def varer_side():
     return render_template(
