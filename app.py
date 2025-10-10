@@ -27,17 +27,10 @@ VARER = [
 def index():
     return "Hjem - Flask kjører! Prøv /meny, /varer eller /kontakt."
 
-# Blokk 3: legger til /meny (bruker liste + join)
+# Blokk 3: /meny bruker felles listen
 @app.route("/meny")
 def meny():
-    ukens_meny = [
-        "Mandag: Pizza",
-        "Tirsdag: Taco",
-        "Onsdag: Pasta",
-        "Torsdag: Kylling",
-        "Fredag: Pizza",
-    ]
-    return "Ukens meny:\n" + "\n".join(ukens_meny)
+    return "Ukens meny:\n" + "\n".join(UKENS_MENY)
 
 # Blokk 4 - Legger til varer-siden
 @app.route("/varer")
