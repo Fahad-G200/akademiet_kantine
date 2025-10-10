@@ -37,7 +37,11 @@ def meny():
 # Blokk 4: /varer bruker felles listen
 @app.route("/varer")
 def varer_side():
-    return "Faste varer:\n" + "\n".join(f"- {v}" for v in VARER)
+    return render_template(
+        "varer.html",      # bruker templates/varer.html
+        varer=VARER        # sender Python-lista til Jinja
+    )
+
 
 # Blokk 5 - Legger til kontakt-siden
 @app.route("/kontakt")
