@@ -1,7 +1,7 @@
 # app.py - Flask-ruter for kantineprosjektet 
 # Blokk 1 - Starter Flask-appen
 
-from flask import Flask # importerer Flask
+from flask import Flask, render_template  # for å bruke HTML-templates
 
 app = Flask(__name__) # Lager appen
 
@@ -22,12 +22,12 @@ VARER = [
     "Salat (50 kr)",
 ]
 
-# Blokk 2 - Legger til forsiden
+#Rute til forsiden /
 @app.route("/") 
 def index():
     return "Hjem - Flask kjører! Prøv /meny, /varer eller /kontakt."
 
-# Blokk 3: /meny bruker felles listen
+#Rute til /meny som viser ukens meny
 @app.route("/meny")
 def meny():
     return "Ukens meny:\n" + "\n".join(UKENS_MENY)
