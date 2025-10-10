@@ -41,6 +41,13 @@ def varer_side():
 @app.route("/kontakt")
 def kontakt():
     return "Kontakt oss på bislett@akademiet.no - Telefon: 93 07 79 90"
+
+# Blokk 9: enkel 404-side
+@app.errorhandler(404)
+def not_found(_):
+    return "404 - Siden ble ikke funnet. Prøv /meny, /varer eller /kontakt.", 404
+
+
 if __name__ == "__main__":
     app.run(debug=True) # slår på debug når du tester, slår av når du er ferdig
 
