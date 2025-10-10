@@ -23,9 +23,9 @@ VARER = [
 ]
 
 #Rute til forsiden /
-@app.route("/") 
+@app.route("/")
 def index():
-    return "Hjem - Flask kjører! Prøv /meny, /varer eller /kontakt."
+    return render_template("index.html")  # viser templates/index.html
 
 #Rute til /meny som viser ukens meny
 @app.route("/meny")
