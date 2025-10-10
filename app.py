@@ -1,4 +1,4 @@
-# app.py
+# app.py - Flask-ruter for kantineprosjektet 
 # Blokk 1 - Starter Flask-appen
 
 from flask import Flask # importerer Flask
@@ -38,5 +38,5 @@ def varer_side():
 def kontakt():
     return "Kontakt oss på bislett@akademiet.no - Telefon: 93 07 79 90"
 if __name__ == "__main__":
-    app.run(debug=True) # Starter serveren
+    app.run(debug=True) # slår på debug når du tester, slår av når du er ferdig
 
