@@ -43,10 +43,11 @@ def varer_side():
     )
 
 
-# Blokk 5 - Legger til kontakt-siden
-@app.route("/kontakt")
+# Rute: /kontakt – kontaktinfo
+@app.route("/kontakt")                   
 def kontakt():
-    return "Kontakt oss på bislett@akademiet.no - Telefon: 93 07 79 90"
+    return render_template("kontakt.html")   # bruker templates/kontakt.html
+
 
 # Blokk 9: enkel 404-side
 @app.errorhandler(404)
