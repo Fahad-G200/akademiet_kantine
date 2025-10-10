@@ -32,16 +32,10 @@ def index():
 def meny():
     return "Ukens meny:\n" + "\n".join(UKENS_MENY)
 
-# Blokk 4 - Legger til varer-siden
+# Blokk 4: /varer bruker felles listen
 @app.route("/varer")
 def varer_side():
-    return (
-        "Faste varer:\n"
-        "- Bagett (45 kr)\n"
-        "- Kaffe (20 kr)\n"
-        "- Smoothie (35 kr)\n"
-        "- Salat (50 kr)"
-    )
+    return "Faste varer:\n" + "\n".join(f"- {v}" for v in VARER)
 
 # Blokk 5 - Legger til kontakt-siden
 @app.route("/kontakt")
