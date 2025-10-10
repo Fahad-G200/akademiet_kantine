@@ -33,6 +33,10 @@ def varer_side():
         "- Salat (50 kr)"
     )
 
+# Blokk 5 - Legger til kontakt-siden
+@app.route("/kontakt")
+def kontakt():
+    return "Kontakt oss på bislett@akademiet.no - Telefon: 93 07 79 90"
 if __name__ == "__main__":
     app.run(debug=True) # Starter serveren
 
