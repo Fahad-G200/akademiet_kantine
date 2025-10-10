@@ -3,7 +3,7 @@
 
 from flask import Flask # importerer Flask
 
-app = Flask (__name__) # Lager appen
+app = Flask(__name__) # Lager appen
 
 # Blokk 2 - Legger til forsiden
 @app.route("/") 
