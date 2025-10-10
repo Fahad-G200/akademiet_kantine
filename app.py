@@ -1,8 +1,10 @@
 # app.py
-# Første steg i kantinaprosjektet: minimal Flask-app
-# Jeg starter bare serveren og legger inn en rute ( forsiden) 
-from flask import Flask # importerer flask-rammeverket 
+# Blokk 1 - Starter Flask-appen
 
-app = Flask(__name__)
+from flask import Flask # importerer Flask
 
-hei
+app = Flask (__name__) # Lager appen
+
+if __name__ == "__main__":
+    app.run(debug=True) # Starter serveren
+
