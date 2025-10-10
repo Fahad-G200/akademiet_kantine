@@ -5,6 +5,23 @@ from flask import Flask # importerer Flask
 
 app = Flask(__name__) # Lager appen
 
+
+# Blokk 6: Felles data (lett å bruke flere steder)
+UKENS_MENY = [
+    "Mandag: Pizza",
+    "Tirsdag: Taco",
+    "Onsdag: Pasta",
+    "Torsdag: Kylling",
+    "Fredag: Pizza",
+]
+
+VARER = [
+    "Bagett (45 kr)",
+    "Kaffe (20 kr)",
+    "Smoothie (35 kr)",
+    "Salat (50 kr)",
+]
+
 # Blokk 2 - Legger til forsiden
 @app.route("/") 
 def index():
