@@ -6,7 +6,7 @@ from flask import Flask, render_template  # for å bruke HTML-templates
 app = Flask(__name__) # Lager appen
 
 
-# Blokk 6: Felles data (lett å bruke flere steder)
+# Felles data - lett å gjebruke i flere ruter
 UKENS_MENY = [
     "Mandag: Pizza",
     "Tirsdag: Taco",
@@ -49,7 +49,7 @@ def kontakt():
     return render_template("kontakt.html")   # bruker templates/kontakt.html
 
 
-# Blokk 9: enkel 404-side
+# 404 - enkel feilmelding når siden ikke finnes
 @app.errorhandler(404)
 def not_found(_):
     return "404 - Siden ble ikke funnet. Prøv /meny, /varer eller /kontakt.", 404
