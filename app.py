@@ -27,11 +27,13 @@ VARER = [
 def index():
     return render_template("index.html")  # viser templates/index.html
 
-#Rute til /meny som viser ukens meny
-@app.route("/meny")
+# Rute: /meny – ukens meny
+@app.route("/meny")                             
 def meny():
-    return "Ukens meny:\n" + "\n".join(UKENS_MENY)
-
+    return render_template(
+        "meny.html",       # bruker templates/meny.html
+        ukens_meny=UKENS_MENY   # sender Python-lista til Jinja
+    )
 # Blokk 4: /varer bruker felles listen
 @app.route("/varer")
 def varer_side():
