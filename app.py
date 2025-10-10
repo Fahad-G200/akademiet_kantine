@@ -1,2 +1,2 @@
 # app.py
-# Første steg i kantinaprosjektet
+# Første steg i kantinaprosjektet: mi
