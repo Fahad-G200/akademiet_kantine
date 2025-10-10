@@ -22,6 +22,16 @@ def meny():
         "Fredag: Pizza"
     )
 
+# Blokk 4 - Legger til varer-siden
+@app.route("/varer")
+def varer_side():
+    return (
+        "Faste varer:\n"
+        "- Bagett (45 kr)\n"
+        "- Kaffe (20 kr)\n"
+        "- Smoothie (35 kr)\n"
+        "- Salat (50 kr)"
+    )
 
 if __name__ == "__main__":
     app.run(debug=True) # Starter serveren
