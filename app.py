@@ -24,3 +24,16 @@ def meny():
         "Fredag: Pizza"
     ]
     return render_template("meny.html", ukens_meny=ukens_meny)
+
+
+
+
+# Vareside
+# Viser faste varer som alltid selges i kantina
+@app.route("/varer")
+def varer():
+    varer = ["Bagett (45 kr)", "Kaffe (20 kr)", "Smoothie (35 kr)", "Salat (50 kr)"]
+    return render_template("varer.html", varer=varer)
+
+
+
