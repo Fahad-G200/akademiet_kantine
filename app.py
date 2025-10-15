@@ -42,3 +42,6 @@ def varer():
 def kontakt():
     return render_template("kontakt.html")
 
+# Starter Flask-serveren lokalt (bare bår man kjører denne filen direkte)
+if __name__ == "__main__":
+    app.run(debug=True)
