@@ -36,4 +36,9 @@ def varer():
     return render_template("varer.html", varer=varer)
 
 
+# Kontakt-side
+# Viser kontakt informasjon til kantina 
+@app.route("/kontakt")
+def kontakt():
+    return render_template("kontakt.html")
 
