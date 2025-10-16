@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Varer{% endblock %}
+
+{% block content %}
+<h2>Faste varer</h2>
+<p>Her er noen av varene du alltid finner i kantina:</p>
+
+<ul>
+    {% for vare in varer %}
+        <li>{{ vare }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
