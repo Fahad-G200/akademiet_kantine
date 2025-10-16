@@ -1,12 +1,12 @@
-{% extends "base.html" %}
-{% block title %}Hjem{% endblock %}
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
 
-{% block content %}
-<h2>Velkommen til Akademiets Kantine</h2>
-<p>Denne siden viser informasjon om kantina, ukens meny og varer du kan kjøpe.</p>
-<img src="{{ url_for('static', filename='images/kantine.jpg') }}" alt="Kantinebilde" style="width: 80%; border-radius: 10px;">
-{% endblock %}
-
-
+</body>
+</html>
 
 
