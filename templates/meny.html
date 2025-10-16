@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Ukens meny{% endblock %}
+
+{% block content %}
+<h2>Ukens meny</h2>
+<p>Her ser du hva kantina tilbyr denne uka:</p>
+
+<ul>
+    {% for rett in ukens_meny %}
+        <li>{{ rett }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
