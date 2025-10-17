@@ -1,53 +1,11 @@
+/* hele nettsiden */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #222;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-header {
-    background-color: #2563eb;
+    text-aligne: center;
+    font-family: arial;
+    background-color: mørk rød;
     color: white;
-    padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
 
-nav a:hover {
-    text-decoration: underline;
-}
 
-main {
-    background-color: white;
-    margin: 30px auto;
-    padding: 20px;
-    width: 70%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-    background-color: #2563eb;
-    color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
