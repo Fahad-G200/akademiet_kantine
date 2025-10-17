@@ -19,4 +19,8 @@ body {
     text-decoration: none;
 }
 
+/* Hover-effekt på lenker */
+.navbar a:hover {
+    text-decoration: underline;
+}
 
