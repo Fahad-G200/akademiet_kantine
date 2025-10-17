@@ -13,6 +13,10 @@ body {
     text-align: center;
 }
 
-
+/* Lenker i menyen */
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
 
 
