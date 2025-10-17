@@ -44,4 +44,4 @@ def kontakt():
 
 # Starter Flask-serveren lokalt (bare bår man kjører denne filen direkte)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True) 
